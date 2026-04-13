@@ -12,7 +12,7 @@ export default function ActionPanel({ onTrack, onBrowse, isGenerating, lastUpdat
           Live Documentation Engine
         </h2>
         <p className="text-sm text-slate-400">
-          Select a project folder directly from your machine to begin live tracking.
+          Choose a project folder from your device to start real-time documentation tracking.
         </p>
       </div>
 
@@ -57,7 +57,7 @@ export default function ActionPanel({ onTrack, onBrowse, isGenerating, lastUpdat
               onClick={onBrowse}
               className="text-[10px] font-black text-purple-400 hover:text-purple-300 transition-colors uppercase tracking-widest"
             >
-              Change
+              Update Folder
             </button>
           </div>
         )}
@@ -80,7 +80,7 @@ export default function ActionPanel({ onTrack, onBrowse, isGenerating, lastUpdat
           ) : (
           <>
               <Terminal className="w-5 h-5" />
-              Connect Live Folder
+              Start Live Tracking
           </>
           )}
       </button>
