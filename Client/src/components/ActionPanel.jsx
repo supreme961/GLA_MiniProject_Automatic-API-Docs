@@ -9,7 +9,7 @@ export default function ActionPanel({ onTrack, onBrowse, isGenerating, lastUpdat
       <div>
         <h2 className="text-lg font-semibold text-white flex items-center gap-2 mb-1">
           <Sparkles className="w-5 h-5 text-purple-400" />
-          Zero-Copy Engine
+          Live Documentation Engine
         </h2>
         <p className="text-sm text-slate-400">
           Select a project folder directly from your machine to begin live tracking.
