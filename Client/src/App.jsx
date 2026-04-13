@@ -20,11 +20,7 @@ function App() {
   const checkStatus = async () => {
     try {
       const res = await fetch(`${SERVER_URL}/`)
-      if (res.ok) {
-        setServerStatus('Connected')
-      } else {
-        setServerStatus('Error')
-      }
+      setServerStatus(res.ok ? 'Connected' : 'Error')
     } catch (err) {
       setServerStatus('Disconnected')
     }
@@ -32,7 +28,7 @@ function App() {
 
   // Fetch README and Endpoints from the project folder
   const fetchData = async () => {
-    if (!projectPath) return;
+    if (!projectPath || projectPath.trim() === '') return;
     try {
       // Fetch README
       const readmeRes = await fetch(`${SERVER_URL}/readme?path=${encodeURIComponent(projectPath)}`)
