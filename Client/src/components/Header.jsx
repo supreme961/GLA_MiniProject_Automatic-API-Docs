@@ -26,7 +26,7 @@ export default function Header({ status }) {
           <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">
             OpenDocs <span className="text-purple-400">AI</span>
           </h1>
-          <p className="text-xs text-slate-500 font-medium">Next-Gen Documentation</p>
+          <p className="text-xs text-slate-500 font-medium">Smart API Documentation Platform</p>
         </div>
       </div>
       
