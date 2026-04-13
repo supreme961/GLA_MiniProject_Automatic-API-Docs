@@ -18,9 +18,9 @@ export default function EndpointCards({ endpoints }) {
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-bold text-white flex items-center gap-2">
           <Activity className="w-5 h-5 text-purple-400" />
-          API Endpoints
+          Available API Endpoints
           <span className="text-xs font-medium bg-slate-800 text-slate-400 px-2 py-0.5 rounded-full ml-2">
-            {endpoints.length} Found
+            {endpoints.length} Available
           </span>
         </h2>
       </div>
@@ -41,7 +41,7 @@ export default function EndpointCards({ endpoints }) {
                 </div>
                 <div className="flex items-center gap-1.5 text-slate-500 group-hover:text-purple-400 transition-colors">
                   <Globe className="w-3.5 h-3.5" />
-                  <span className="text-[10px] font-mono">PUBLIC</span>
+                  <span className="text-[10px] font-mono">ACTIVE</span>
                 </div>
               </div>
 
@@ -63,7 +63,7 @@ export default function EndpointCards({ endpoints }) {
                    <div className="w-1.5 h-1.5 rounded-full bg-slate-800" />
                  </div>
                  <button className="flex items-center gap-1 text-[10px] font-bold text-slate-500 group-hover:text-purple-400 transition-colors">
-                   Details <ArrowRight className="w-3 h-3" />
+                   View Details <ArrowRight className="w-3 h-3" />
                  </button>
               </div>
             </div>
