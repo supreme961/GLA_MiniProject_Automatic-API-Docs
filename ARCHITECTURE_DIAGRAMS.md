@@ -209,4 +209,3 @@ The codebase is best described as a two-tier local application:
 - Gemini is an external dependency, not an internal service.
 - The project output is written back into the selected folder as `README.md` and `endpoints.json`.
 
-If you want, I can also split these into separate files for a README section, a presentation slide deck, or a cleaner docs folder.
