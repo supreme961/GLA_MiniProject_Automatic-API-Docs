@@ -27,10 +27,10 @@ export default function ActionPanel({
       <div>
         <h2 className="text-lg font-semibold text-white flex items-center gap-2 mb-1">
           <Sparkles className="w-5 h-5 text-purple-400" />
-          Zero-Copy Engine
+          Live Documentation Engine
         </h2>
         <p className="text-sm text-slate-400">
-          Select a project folder from your system to begin live tracking.
+
         </p>
       </div>
 
@@ -90,7 +90,7 @@ export default function ActionPanel({
               onClick={onBrowse}
               className="text-[10px] font-black text-purple-400 hover:text-purple-300 uppercase tracking-widest"
             >
-              Change
+              Update Folder
             </button>
           </div>
         )}
@@ -113,8 +113,7 @@ export default function ActionPanel({
           </>
         ) : (
           <>
-            <Terminal className="w-5 h-5" />
-            Connect Live Folder
+
           </>
         )}
       </button>

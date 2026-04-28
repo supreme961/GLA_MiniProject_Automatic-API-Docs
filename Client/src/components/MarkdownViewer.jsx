@@ -41,23 +41,11 @@ export default function MarkdownViewer({ content = "" }) {
       <div className="bg-slate-900/50 border-b border-slate-800/80 px-6 py-4 flex items-center justify-between">
         <h2 className="text-sm font-semibold flex items-center gap-2 text-slate-200">
           <FileText className="w-4 h-4 text-blue-400" />
-          README.md
+          Project Documentation
         </h2>
 
         <div className="flex gap-2">
-          <button
-            onClick={handleCopy}
-            title="Copy Raw"
-            className="p-1.5 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors"
-          >
-            <Copy className="w-4 h-4" />
-          </button>
 
-          <button
-            onClick={handleDownload}
-            title="Download"
-            className="p-1.5 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors"
-          >
             <Download className="w-4 h-4" />
           </button>
         </div>
@@ -87,7 +75,7 @@ export default function MarkdownViewer({ content = "" }) {
           /* Markdown */
           <div className="markdown-body">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
-              {content || "*No documentation generated yet.*"}
+
             </ReactMarkdown>
           </div>
         )}
